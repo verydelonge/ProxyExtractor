@@ -28,6 +28,16 @@ Buka ekstensi ModHeader di Chrome Anda, lalu masukkan data yang telah disalin se
 
 ---
 
+### 4. Aktivasi Koneksi Proxy Lokal (Sangat Penting! ⚠️)
+Karena proxy ini berjalan secara lokal menggunakan protokol `HTTPS`, pertama kali Anda mengakses atau menggunakan sistem, Google Chrome akan menampilkan peringatan keamanan merah berupa **"Your connection is not private"** (`NET::ERR_CERT_AUTHORITY_INVALID`).
+
+Ini adalah hal yang normal untuk *local proxy*. Agar sistem dapat berjalan, Anda harus memberikan izin akses manual dengan cara:
+
+1. Buka tab baru di Chrome, lalu ketik dan buka URL proxy lokal yang didapatkan dari aplikasi (Contoh: `https://127.0.0.1:PORT/`).
+2. Klik tombol **`Advanced`** (atau **`Lanjutan`**) yang ada di bagian bawah teks peringatan.
+3. Klik tautan **`Proceed to 127.0.0.1 (unsafe)`** (atau **`Lanjutkan ke 127.0.0.1 (tidak aman)`**).
+4. Jika halaman berubah menjadi blank putih atau memunculkan respons teks dari proxy, berarti koneksi telah sukses terhubung! Anda sudah bisa menutup tab tersebut dan menggunakan browser seperti biasa.
+
 ## 📸 Panduan Visual Pengisian
 
 Pastikan penempatan data di dalam ekstensi ModHeader Anda terisi dengan benar. Silakan klik tombol di bawah ini untuk melihat panduan gambar:
